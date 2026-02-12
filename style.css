@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container { max-width: 1000px; margin: auto; }
+
+header { text-align: center; color: #4caf50; margin-bottom: 30px; }
+
+/* Zone Coupon */
+.coupon-section {
+    background: #1e1e1e;
+    border: 2px dashed #4caf50;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Boutons de date */
+.date-picker { display: flex; justify-content: center; margin-bottom: 20px; }
+.date-btn {
+    background: #333; color: white; border: 1px solid #4caf50;
+    padding: 10px 20px; margin: 5px; cursor: pointer; border-radius: 5px;
+}
+.date-btn.active { background: #4caf50; font-weight: bold; }
+
+/* Tableau */
+table { width: 100%; border-collapse: collapse; background: #1e1e1e; border-radius: 8px; overflow: hidden; }
+th { background: #4caf50; padding: 15px; }
+td { padding: 12px; border-bottom: 1px solid #333; text-align: center; }
+
+/* Bouton Analyser */
+.btn-analyser {
+    background: transparent; color: #4caf50; border: 1px solid #4caf50;
+    padding: 6px 12px; border-radius: 4px; cursor: pointer; transition: 0.3s;
+}
+.btn-analyser:hover { background: #4caf50; color: white; }
+
+.win { color: #4caf50; font-weight: bold; }
+.loss { color: #f44336; font-weight: bold; }

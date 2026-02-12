@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOT-DATA PRONO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>⚽ FOOT-DATA PRONO</h1>
+            <p>Objectif : Coupon Côte 2.00</p>
+        </header>
+
+        <div id="coupon-final" class="coupon-section">
+            <h3>🔥 Ton Coupon Côte 2.00+</h3>
+            <div id="selection-matchs">Aucun match sélectionné</div>
+        </div>
+
+        <main>
+            <div class="date-picker">
+                <button class="date-btn" onclick="changerDate(-1)">Hier</button>
+                <button id="btn-aujourdhui" class="date-btn active" onclick="changerDate(0)">Aujourd'hui</button>
+                <button class="date-btn" onclick="changerDate(1)">Demain</button>
+            </div>
+
+            <section id="pronos">
+                <table id="table-matchs">
+                    <thead>
+                        <tr>
+                            <th>CHAMPIONNAT</th>
+                            <th>MATCH</th>
+                            <th>STAT +1.5</th>
+                            <th>COTE</th>
+                            <th>STATUT</th>
+                        </tr>
+                    </thead>
+                    <tbody id="liste-matchs">
+                        <tr>
+                            <td colspan="5">Sélectionnez une date pour charger les matchs...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
